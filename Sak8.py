@@ -25,20 +25,26 @@ CGPA = float(input("Enter your CGPA"))
 STUDENT = [SID, Name, Gender, Course_name, CGPA]
 print(STUDENT)
 
-# Question 4
-marks = []
-for i in range(5):  # for loop to take input 5 times
-    marks.append(input("Enter marks of students"))
-marks.sort()
-print(marks)
 
-# Question 5
-colour = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
-colour.remove(colour[3])
-print("Part a question : ", colour)
-colour = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
-colour[3:5] = ['Purple']
-print("Part b of question :", colour)
+
+# 04 Marks of students
+s1=float(input("Enter the marks of Fist Student"))
+s2=float(input("Enter the marks of Second Student"))
+s3=float(input("Enter the marks of Third Student"))
+s4=float(input("Enter the marks of Fourth Student"))
+s5=float(input("Enter the marks of Fifth Student"))
+slst=[s1, s2, s3, s4, s5]
+slst.sort()
+print(slst)
+
+# 05
+color=["Red", "Green", "White", "Black", "Pink", "Yellow"]
+color.pop(3)
+print(color)
+
+
+color[3]="Purple"
+print(color)
 
 
 
