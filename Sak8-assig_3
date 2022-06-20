@@ -57,15 +57,15 @@ print("Ans =",Ans)
 
 #Q3.d
 r = str("radius")
-Ans = str("math.sqrt(r*(math.cos(a))*2+r(math.sin(a))**2")
+Ans = str("math.sqrt(r*(math.cos(a))**2+r(math.sin(a))**2")
 print("Ans =",Ans)
 
 #Q3.e
-y1 = str("variable 1")
-y2 = str("variable 2")
-x1 = str("variable 3")
-x2 = str("variable 4")
-Ans = str("y2-y1)/(x2-x1")
+y1 = int("variable 1")
+y2 = int("variable 2")
+x1 = int("variable 3")
+x2 = int("variable 4")
+Ans = int("y2-y1)/(x2-x1")
 print("Ans =", Ans)
 
 
@@ -96,8 +96,8 @@ print(i)
 
 #Q.5
 print("This program finds the total molecular weight of a combination of hydrogen, carbon and oxygen atoms :")
-h = eval(input("How many hydrogen atoms? "))
-c = eval(input("Carbon? "))
-o = eval(input("Oxygen? "))
+h = int(input("How many hydrogen atoms? "))
+c = int(input("Carbon? "))
+o = int(input("Oxygen? "))
 total = (h * 1.00794) + (c * 12.0107) + (o * 15.9994)
 print("The total molecular weight is", total)
