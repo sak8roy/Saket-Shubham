@@ -86,7 +86,7 @@ class student_data:
         print(f'name : {self.name} ||| branch : {self.branch}')
 
 
-s = student_data('aniket', 'civil')
+s = student_data('Saket', 'civil')
 # function
 s.student_id()
 
