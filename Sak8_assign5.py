@@ -65,17 +65,15 @@ for i in range(0,row+1):
 
 6.
 lower_value = int(input("Enter the Lowest Range Value : "))  
-upper_value = int(input("Enter the Upper Range Value : "))    # input from user the lowest and the upper range
+upper_value = int(input("Enter the Upper Range Value : "))    
   
 print ("The Prime Numbers in this range are : ")  
 for number in range (lower_value, upper_value + 1):  
     if number > 1:  
-        for i in range (2, number):                           # Check for each number if it has any factor between 1 and itself
-            if (number % i) == 0:                             # if YES, the code will move on
-                break       
+        for i in range (2, number):                          
+            if (number % i) == 0:                            
         else:  
-            print (number)                                    # if NO, the code prints the number
-
+            print (number)                                   
 
 
 
@@ -120,8 +118,7 @@ print("Number of times each number occurs in the List",times)
 
 
 
-#question-9---------------------------------------------------------------------------------------------------------------------------------------
-print("ANS.9")
+9.
 n=int(input("Number of words: "))
 li=[]
 for i in range(n):
