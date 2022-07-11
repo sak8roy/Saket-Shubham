@@ -1,11 +1,9 @@
-#Qn1
-print("ANS.1")
+1.
 string=input("Enter the the string :")
 print(string[::-1])
+ 
 
-
-#Qn2
-print("ANS.2")
+2.
 x=int(input("Enter the minimum value :"))
 y=int(input("Enter the maximum value: "))
 num=int(input("Enter the number for divisibility check :"))
@@ -15,20 +13,19 @@ while i<=y:
         print(i)
     i+=1
 
-#Qn3
-print("ANS.3")
+3.
 a=float(input("Enter the length of side:"))
 b=float(input("Enter the length of side:"))
 c=float(input("Enter the length of side:"))
 if a+b>c and a+c>b and b+c>a :
     s=(a+b+c)/2
-    ar_tri=(s*(s-a)*(s-b)*(s-c))**(0.5)
+    ar_tri=(s*(s-a)(s-b)(s-c))**(0.5)
     print(ar_tri)
 else :
     print("Error")
 
-#Qn4
-print("ANS.4")
+
+4.
 n=int(input("Enter the no. of rows :"))
 t=(n//2)+1
 l=n//2
@@ -42,55 +39,51 @@ for q in range(l,0,-1):
     print()
 
 
-#Qn5
-print("ANS.5")
+5.
 row=int(input("Enter the number of rows"))
 n=0
 
 for i in range(0,row+1):
-
-      for j in range(i):
+      
+      for j in range(i): 
             if n==26:
-                n=0
+                n=0 
             else:
                 pass
-            y=chr(65+n)
+            y=chr(65+n) 
             print(y, end="")
             n+=1
       print("")
 
 
 
-#Qn6
-print("ANS.6")
-lower_value = int(input("Enter the Lowest Range Value : "))
+6.
+lower_value = int(input("Enter the Lowest Range Value : "))  
 upper_value = int(input("Enter the Upper Range Value : "))    # input from user the lowest and the upper range
-
-print ("The Prime Numbers in this range are : ")
-for number in range (lower_value, upper_value + 1):
-    if number > 1:
+  
+print ("The Prime Numbers in this range are : ")  
+for number in range (lower_value, upper_value + 1):  
+    if number > 1:  
         for i in range (2, number):                           # Check for each number if it has any factor between 1 and itself
             if (number % i) == 0:                             # if YES, the code will move on
-                break
-        else:
+                break       
+        else:  
             print (number)                                    # if NO, the code prints the number
 
 
 
 
-#Qn7
-print("ANS.7")
+7.
 accum=[]
 for i in range(1,500):
     if i%7==0 and i%11==0 :
         accum.append(i)
-print("The numbers divisible by 11 and are multiple of 7 are :",accum)
+print("The numbers divisible by 11 and are multiple of 7 are :",accum)        
 
 
 
 
-#Qn8
-print("ANS.8")
+8.
 pos=[]
 neg=[]
 odd=[]
@@ -121,7 +114,7 @@ print("Number of times each number occurs in the List",times)
 
 
 
-#Qn9
+#question-9---------------------------------------------------------------------------------------------------------------------------------------
 print("ANS.9")
 n=int(input("Number of words: "))
 li=[]
