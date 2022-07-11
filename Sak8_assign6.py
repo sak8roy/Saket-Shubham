@@ -44,22 +44,27 @@ for i in range(rows):
 
 #4
 
-sen=input("Enter the sentence to check whether it is panagram or not: ")
-a=97
-A=65
-count=0
-for i in range(1,27):
-    for i in range(0,len(sen)):
-        if(sen[i]==chr(a) or sen[i]==chr(A)):
-            count+=1
-            break
-    a=a+1
-    A=A+1
-if(count==26):
-    print("The sentence is panagram.")
-else:
-    print("The sentence is not panagram.")
+i = input("enter your string : ")
+i = i.replace(' ', '')
+lst = set(i)
+lst = list(lst)
+#print(lst)
 
+alphabets = 'qwertyuioplkjhgfdsazxcvbnm'
+alphabets = list(alphabets)
+#print(alphabets)
+
+
+check = 0
+for i in lst:
+    if i in alphabets:
+        check += 1
+
+
+if check == len(alphabets):
+    print('yes')
+else:
+    print('no')
 
 #5
 
