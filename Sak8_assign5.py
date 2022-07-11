@@ -26,18 +26,24 @@ else :
 
 
 4.
-n=int(input("Enter the no. of rows :"))
-t=(n//2)+1
-l=n//2
-for i in range(1,t+1):
-    for j in range(1,i+1):
-        print("*",end="")
-    print()
-for q in range(l,0,-1):
-    for r in range(q,0,-1):
-        print("*",end="")
-    print()
-
+i=1
+while i<=10:
+	if(i<=5):
+		j=1
+		str=''
+		while(j<=i):
+			str=str+'*'
+			j+=1
+		print(str)
+		i+=1
+	else:
+		j=10
+		str=''
+		while(j>i):
+			str=str+'*'
+			j-=1
+		print(str)
+		i+=1
 
 5.
 row=int(input("Enter the number of rows"))
